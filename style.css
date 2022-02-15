@@ -1,0 +1,53 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffd0a8;
+    color: #333;
+    font-family: 'calibri',sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.container{
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: #fff;
+    /* since the body is flex we can use flex here....it means that no matter what the screen size is the box will always be 80% screen size */
+    flex: 0 0 80%;
+    box-shadow: 12.5px 1.5px 10px rgba(0, 0, 0, 0.132),
+                100px 12px 80px rgba(0, 0, 0, 0.23);
+}
+
+#quoteBtn{
+    text-transform: capitalize;
+    border: none;
+    color: rgb(255,255,255);
+    background: #d89156;
+    padding: 0.35rem 0.5rem;
+    font-size: 1.3rem;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: -12.5px 1.5px 10px rgba(0, 0, 0, 0.132),
+                100px 12px 80px rgba(0, 0, 0, 0.23);
+}
+
+#quoteBtn:hover{
+    background: rgb(241, 178, 95);
+}
+
+blockquote{
+    background: #f9f9f9;
+    border-left: 10px solid #fcdbbf;
+    margin: 1.5rem;
+    padding: 0.5rem;
+}
+
+#quoteAuthor{
+    color: #e28534;
+    font-size: 1.5rem;
+    text-decoration: underline 3px;
+}
